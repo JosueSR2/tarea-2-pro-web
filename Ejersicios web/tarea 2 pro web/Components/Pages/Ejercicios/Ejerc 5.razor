@@ -1,0 +1,105 @@
+﻿@page "/Ejerc_5"
+@inject NavigationManager Navigation
+@rendermode InteractiveServer
+
+<h1 class="text-2xl font-bold mb-4">Cálculo del Factorial</h1>
+
+<div class="mb-4">
+    <label for="inputNumber" class="block mb-2">Introduce un número entero no negativo:</label>
+    <input type="number" @bind="inputNumber" id="inputNumber" class="input-box" min="0" />
+</div>
+
+<button class="btn btn-primary" @onclick="CalculateFactorial">Obtener Factorial</button>
+
+@if (result.HasValue)
+{
+    <div class="mt-4">
+        <p class="result-text">El factorial de @inputNumber es: <strong>@result</strong></p>
+    </div>
+}
+
+<div class="mt-6">
+    <button class="btn btn-secondary" @onclick="GoToMathProblemSelector">Volver a los Problemas Matemáticos</button>
+</div>
+
+@code {
+    private int inputNumber;
+    private long? result;
+
+    private void CalculateFactorial()
+    {
+        if (inputNumber < 0)
+        {
+            result = null; // No está definido para números negativos
+        }
+        else
+        {
+            result = Factorial(inputNumber);
+        }
+    }
+
+    private long Factorial(int number)
+    {
+        if (number == 0) return 1;
+        long factorial = 1;
+        for (int i = 1; i <= number; i++)
+        {
+            factorial *= i;
+        }
+        return factorial;
+    }
+
+    private void GoToMathProblemSelector()
+    {
+        Navigation.NavigateTo("/math-problem");
+    }
+}
+
+<style>
+    .input-box {
+        padding: 10px;
+        border: 2px solid #007bff;
+        border-radius: 5px;
+        width: 100%;
+        max-width: 300px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-primary {
+        background: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+        margin-top: 10px;
+    }
+
+        .btn-primary:hover {
+            background: #0056b3;
+        }
+
+    .btn-secondary {
+        background: #6c757d;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+        margin-top: 20px;
+    }
+
+        .btn-secondary:hover {
+            background: #5a6268;
+        }
+
+    .result-text {
+        font-size: 1.25rem;
+        color: #333;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+</style>
+

@@ -1,0 +1,103 @@
+﻿@page "/Ejerc_12"
+@inject NavigationManager Navigation
+@rendermode InteractiveServer
+
+<h1 class="text-2xl font-bold mb-4">Verificar si la Diferencia es Primal</h1>
+
+<div class="mb-4">
+    <label for="inputNumber1" class="block mb-2">Introduce el primer número entero:</label>
+    <input type="number" @bind="inputNumber1" id="inputNumber1" class="input-box" />
+</div>
+
+<div class="mb-4">
+    <label for="inputNumber2" class="block mb-2">Introduce el segundo número entero:</label>
+    <input type="number" @bind="inputNumber2" id="inputNumber2" class="input-box" />
+</div>
+
+<button class="btn btn-primary" @onclick="CheckDifferencePrime">Verificar Diferencia</button>
+
+@if (result.HasValue)
+{
+    <div class="mt-4">
+        <p class="result-text">La diferencia entre @inputNumber1 y @inputNumber2 @((result == 1) ? "es un número primo." : "no es un número primo.")</p>
+    </div>
+}
+
+<div class="mt-6">
+    <button class="btn btn-secondary" @onclick="GoToMathProblemSelector">Volver a los Problemas Matemáticos</button>
+</div>
+
+@code {
+    private int inputNumber1;
+    private int inputNumber2;
+    private int? result;
+
+    private void CheckDifferencePrime()
+    {
+        int difference = Math.Abs(inputNumber1 - inputNumber2);
+        result = IsPrime(difference) ? 1 : 0;
+    }
+
+    private bool IsPrime(int number)
+    {
+        if (number < 2) return false;
+        for (int i = 2; i <= Math.Sqrt(number); i++)
+        {
+            if (number % i == 0) return false;
+        }
+        return true;
+    }
+
+    private void GoToMathProblemSelector()
+    {
+        Navigation.NavigateTo("/math-problem");
+    }
+}
+
+<style>
+    .input-box {
+        padding: 10px;
+        border: 2px solid #007bff;
+        border-radius: 5px;
+        width: 100%;
+        max-width: 300px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-primary {
+        background: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+        margin-top: 10px;
+    }
+
+        .btn-primary:hover {
+            background: #0056b3;
+        }
+
+    .btn-secondary {
+        background: #6c757d;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+        margin-top: 20px;
+    }
+
+        .btn-secondary:hover {
+            background: #5a6268;
+        }
+
+    .result-text {
+        font-size: 1.25rem;
+        color: #333;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+</style>
