@@ -1,0 +1,87 @@
+﻿@page "/Ejerc_10"
+@inject NavigationManager Navigation
+@rendermode InteractiveServer
+
+<h1 class="text-2xl font-bold mb-4">Verificar Mínimo de Dígitos</h1>
+
+<div class="mb-4">
+    <label for="inputNumber" class="block mb-2">Introduce un número entero:</label>
+    <input type="number" @bind="inputNumber" id="inputNumber" class="input-box" />
+</div>
+
+<button class="btn btn-primary" @onclick="CheckMinimumDigits">Verificar Dígitos</button>
+
+@if (result.HasValue)
+{
+    <div class="mt-4">
+        <p class="result-text">El número @inputNumber @((result == 1) ? "tiene" : "no tiene") un mínimo de 3 dígitos.</p>
+    </div>
+}
+
+<div class="mt-6">
+    <button class="btn btn-secondary" @onclick="GoToMathProblemSelector">Volver a los Problemas Matemáticos</button>
+</div>
+
+@code {
+    private int inputNumber;
+    private int? result;
+
+    private void CheckMinimumDigits()
+    {
+        result = (inputNumber >= 100) ? 1 : 0;
+    }
+
+    private void GoToMathProblemSelector()
+    {
+        Navigation.NavigateTo("/math-problem");
+    }
+}
+
+<style>
+    .input-box {
+        padding: 10px;
+        border: 2px solid #007bff;
+        border-radius: 5px;
+        width: 100%;
+        max-width: 300px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-primary {
+        background: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+        margin-top: 10px;
+    }
+
+        .btn-primary:hover {
+            background: #0056b3;
+        }
+
+    .btn-secondary {
+        background: #6c757d;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+        margin-top: 20px;
+    }
+
+        .btn-secondary:hover {
+            background: #5a6268;
+        }
+
+    .result-text {
+        font-size: 1.25rem;
+        color: #333;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+</style>
+

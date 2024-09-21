@@ -1,0 +1,28 @@
+D:\Clase\Programacion web amadis\Ejersicios web\tarea 2 pro web\bin\Debug\net8.0\appsettings.Development.json
+D:\Clase\Programacion web amadis\Ejersicios web\tarea 2 pro web\bin\Debug\net8.0\appsettings.json
+D:\Clase\Programacion web amadis\Ejersicios web\tarea 2 pro web\bin\Debug\net8.0\tarea_2_pro_web.staticwebassets.runtime.json
+D:\Clase\Programacion web amadis\Ejersicios web\tarea 2 pro web\bin\Debug\net8.0\tarea_2_pro_web.exe
+D:\Clase\Programacion web amadis\Ejersicios web\tarea 2 pro web\bin\Debug\net8.0\tarea_2_pro_web.deps.json
+D:\Clase\Programacion web amadis\Ejersicios web\tarea 2 pro web\bin\Debug\net8.0\tarea_2_pro_web.runtimeconfig.json
+D:\Clase\Programacion web amadis\Ejersicios web\tarea 2 pro web\bin\Debug\net8.0\tarea_2_pro_web.dll
+D:\Clase\Programacion web amadis\Ejersicios web\tarea 2 pro web\bin\Debug\net8.0\tarea_2_pro_web.pdb
+D:\Clase\Programacion web amadis\Ejersicios web\tarea 2 pro web\obj\Debug\net8.0\tarea 2 pro web.GeneratedMSBuildEditorConfig.editorconfig
+D:\Clase\Programacion web amadis\Ejersicios web\tarea 2 pro web\obj\Debug\net8.0\tarea 2 pro web.AssemblyInfoInputs.cache
+D:\Clase\Programacion web amadis\Ejersicios web\tarea 2 pro web\obj\Debug\net8.0\tarea 2 pro web.AssemblyInfo.cs
+D:\Clase\Programacion web amadis\Ejersicios web\tarea 2 pro web\obj\Debug\net8.0\tarea 2 pro web.csproj.CoreCompileInputs.cache
+D:\Clase\Programacion web amadis\Ejersicios web\tarea 2 pro web\obj\Debug\net8.0\tarea_2_pro_web.MvcApplicationPartsAssemblyInfo.cache
+D:\Clase\Programacion web amadis\Ejersicios web\tarea 2 pro web\obj\Debug\net8.0\staticwebassets.build.json
+D:\Clase\Programacion web amadis\Ejersicios web\tarea 2 pro web\obj\Debug\net8.0\staticwebassets.development.json
+D:\Clase\Programacion web amadis\Ejersicios web\tarea 2 pro web\obj\Debug\net8.0\staticwebassets\msbuild.tarea_2_pro_web.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Clase\Programacion web amadis\Ejersicios web\tarea 2 pro web\obj\Debug\net8.0\staticwebassets\msbuild.build.tarea_2_pro_web.props
+D:\Clase\Programacion web amadis\Ejersicios web\tarea 2 pro web\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.tarea_2_pro_web.props
+D:\Clase\Programacion web amadis\Ejersicios web\tarea 2 pro web\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.tarea_2_pro_web.props
+D:\Clase\Programacion web amadis\Ejersicios web\tarea 2 pro web\obj\Debug\net8.0\staticwebassets.pack.json
+D:\Clase\Programacion web amadis\Ejersicios web\tarea 2 pro web\obj\Debug\net8.0\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
+D:\Clase\Programacion web amadis\Ejersicios web\tarea 2 pro web\obj\Debug\net8.0\scopedcss\bundle\tarea_2_pro_web.styles.css
+D:\Clase\Programacion web amadis\Ejersicios web\tarea 2 pro web\obj\Debug\net8.0\scopedcss\projectbundle\tarea_2_pro_web.bundle.scp.css
+D:\Clase\Programacion web amadis\Ejersicios web\tarea 2 pro web\obj\Debug\net8.0\tarea_2_pro_web.dll
+D:\Clase\Programacion web amadis\Ejersicios web\tarea 2 pro web\obj\Debug\net8.0\refint\tarea_2_pro_web.dll
+D:\Clase\Programacion web amadis\Ejersicios web\tarea 2 pro web\obj\Debug\net8.0\tarea_2_pro_web.pdb
+D:\Clase\Programacion web amadis\Ejersicios web\tarea 2 pro web\obj\Debug\net8.0\tarea 2 pro web.genruntimeconfig.cache
+D:\Clase\Programacion web amadis\Ejersicios web\tarea 2 pro web\obj\Debug\net8.0\ref\tarea_2_pro_web.dll

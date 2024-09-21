@@ -1,0 +1,110 @@
+﻿@page "/Sobre_mi"
+
+@inject NavigationManager Navigation
+@rendermode InteractiveServer
+
+<PageTitle>Sobre mí</PageTitle>
+
+<div class="sobre-mi">
+    <h1>Josue Sierra</h1>
+
+    <img src="https://avatars.githubusercontent.com/u/121237209?s=400&u=71c8b55b1f16b70daafec4d24558a9335d560513&v=4" alt="Josue Sierra" class="foto-perfil">
+
+    <h3>Sobre mí</h3>
+    <p>
+        Soy Josue, un estudiante de software apasionado por la tecnología y el mundo de la computación.
+        Desde siempre me ha intrigado cómo funcionan las cosas, y esa curiosidad me ha impulsado a elegir
+        esta carrera. Disfruto aprender nuevas tecnologías, ya que el mundo del software está en constante evolución,
+        lo que me motiva a seguir superándome cada día.
+    </p>
+
+    <p>
+        Además de la programación, me encanta trabajar en proyectos que me desafíen y me permitan mejorar mis habilidades.
+        Creo firmemente en la importancia del aprendizaje continuo, ya que es clave para mantenerse a la vanguardia en esta industria.
+        Estoy emocionado por las oportunidades que el futuro me puede ofrecer en este emocionante mundo del desarrollo de software.
+    </p>
+
+    <button class="btn btn-primary" @onclick="GoToHome">Inicio</button>
+
+    <div class="social-media">
+        <h3>Sígueme en:</h3>
+        <a href="https://github.com/JosueSR2" target="_blank" class="social-icon">
+            <img src="https://img.icons8.com/ios-filled/50/000000/github.png" alt="GitHub"/>
+        </a>
+        <a href="https://wa.me/qr/5P7GGJ6JO5EUD" target="_blank" class="social-icon">
+            <img src="https://img.icons8.com/ios-filled/50/000000/whatsapp.png" alt="WhatsApp"/>
+        </a>
+        <a href="http://t.me/JosueSierra23" target="_blank" class="social-icon">
+            <img src="https://img.icons8.com/ios-filled/50/000000/telegram.png" alt="Telegram"/>
+        </a>
+    </div>
+</div>
+
+@code {
+    private void GoToHome()
+    {
+        Navigation.NavigateTo("/");
+    }
+}
+
+<style>
+    .sobre-mi {
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+        font-family: Arial, sans-serif;
+        color: #333;
+        line-height: 1.6;
+    }
+
+    .foto-perfil {
+        border-radius: 50%;
+        max-width: 150px;
+        margin: 20px 0;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        color: #2c3e50;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        margin-top: 20px;
+        color: #2980b9;
+    }
+
+    p {
+        font-size: 1rem;
+        margin: 10px 0;
+        padding: 0 20px;
+    }
+
+    .social-media {
+        margin-top: 20px;
+    }
+
+    .social-icon {
+        margin: 0 10px;
+    }
+
+    .btn-primary {
+        display: block;
+        margin: 20px auto 0;
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+    }
+</style>
+
+

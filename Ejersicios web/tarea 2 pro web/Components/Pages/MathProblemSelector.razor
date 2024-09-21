@@ -1,0 +1,178 @@
+﻿@page "/math-problem"
+@rendermode InteractiveServer
+@inject NavigationManager Navigation
+
+@code {
+    public class Problem
+    {
+        public int Id { get; set; }
+        public string Question { get; set; }
+        public string Url { get; set; }
+    }
+
+    private List<Problem> problems = GenerateProblems();
+    private Problem? selectedProblem;
+
+    private static List<Problem> GenerateProblems()
+    {
+        return new List<Problem>
+        {
+            new Problem { Id = 1, Question = "Construir una función que reciba como parámetro un entero y retorne su último dígito.", Url = "/Ejerc_1" },
+            new Problem { Id = 2, Question = "Construir una función que reciba como parámetro un entero y retorne la cantidad de dígitos.", Url = "/Ejerc_2"},
+            new Problem { Id = 3, Question = "Construir una función que reciba como parámetro un entero y retorne la cantidad de dígitos primos.", Url = "/Ejerc_3"},
+            new Problem { Id = 4, Question = "Construir una función que reciba como parámetro un carácter y retorne el código ASCII asociado a él.", Url = "/Ejerc_4"},
+            new Problem { Id = 5, Question = "Construir una función que reciba un entero y le calcule su factorial.", Url = "/Ejerc_5"},
+            new Problem { Id = 6, Question = "Construir una función que reciba como parámetro un entero y un dígito y retorne 1 si es múltiplo, 0 si no.", Url = "/Ejerc_6"},
+            new Problem { Id = 7, Question = "Construir una función que reciba como parámetro un entero y un dígito y retorne la cantidad de veces que se encuentra el dígito.", Url = "/Ejerc_7"},
+            new Problem { Id = 8, Question = "Construir una función que reciba dos enteros y retorne 1 si el primero es múltiplo del segundo.", Url = "/Ejerc_8"},
+            new Problem { Id = 9, Question = "Construir una función que reciba un entero y retorne 1 si es un dígito en ASCII.", Url = "/Ejerc_9"},
+            new Problem { Id = 10, Question = "Construir una función que reciba un entero y retorne 1 si tiene mínimo 3 dígitos.", Url = "/Ejerc_10"},
+            new Problem { Id = 11, Question = "Construir una función que reciba un entero y retorne 1 si el primer dígito es igual al último.", Url = "/Ejerc_11"},
+            new Problem { Id = 12, Question = "Construir una función que reciba dos enteros y retorne 1 si la diferencia es un número primo.", Url = "/Ejerc_12"},
+            new Problem { Id = 13, Question = "Construir una función que reciba un entero y un dígito y retorne el dígito en la posición especificada.", Url = "/Ejerc_13"},
+            new Problem { Id = 14, Question = "Construir una función que reciba un vector de 10 enteros y retorne la posición del mayor.", Url = "/Ejerc_14"},
+            new Problem { Id = 15, Question = "Construir una función que reciba un vector de 10 enteros y retorne la cantidad de Fibonacci.", Url = "/Ejerc_15"},
+            new Problem { Id = 16, Question = "Construir una función que reciba un vector de 10 enteros y retorne el promedio.", Url = "/Ejerc_16"},
+            new Problem { Id = 17, Question = "Construir una función que reciba un vector de 10 enteros y un valor y retorne 1 si está en el vector.", Url = "/Ejerc_17"},
+            new Problem { Id = 18, Question = "Construir una función que reciba un vector de 10 enteros y retorne la posición del mayor primo que termina en 3.", Url = "/Ejerc_18"},
+            new Problem { Id = 19, Question = "Construir una función que reciba dos enteros como base y exponente y retorne el resultado.", Url = "/Ejerc_19"},
+            new Problem { Id = 20, Question = "Construir una función que reciba un vector de 10 enteros y un dígito y retorne la cantidad de veces que se encuentra.", Url = "/Ejerc_20"},
+            new Problem { Id = 21, Question = "Construir una función que reciba un vector de 10 enteros y un dígito y retorne la cantidad de números donde está de penúltimo.", Url = "/Ejerc_21"},
+            new Problem { Id = 22, Question = "Construir una función que reciba una matriz 3x4 y retorne la cantidad de números primos.", Url = "/Ejerc_22"},
+            new Problem { Id = 23, Question = "Construir una función que reciba una matriz 4x4 y un valor y retorne la cantidad de repeticiones.", Url = "/Ejerc_23"},
+            new Problem { Id = 24, Question = "Construir una función que reciba una matriz 4x4 y retorne la columna del número mayor.", Url = "/Ejerc_24"},
+            new Problem { Id = 25, Question = "Construir una función que reciba una matriz 5x5 y retorne el valor de su moda.", Url = "/Ejerc_25"},
+        };
+    }
+
+    private void ShowProblem(Problem problem)
+    {
+        Navigation.NavigateTo(problem.Url);
+    }
+
+    private void CloseDialog()
+    {
+        selectedProblem = null;
+    }
+}
+
+<div class="header-container">
+    <h1 class="text-2xl font-bold mb-4">Ejercicios</h1>
+    <a href="/" class="btn btn-secondary">Inicio</a> 
+</div>
+
+<div class="grid grid-cols-5 gap-4">
+    @foreach (var problem in problems)
+    {
+        <button class="btn btn-outline" @onclick="() => ShowProblem(problem)">
+            Problem @problem.Id
+        </button>
+    }
+</div>
+
+@if (selectedProblem != null)
+{
+    <div class="dialog-overlay">
+        <div class="dialog-content">
+            <h2>Problem @selectedProblem.Id</h2>
+            <p class="text-lg font-semibold mb-2">Question: @selectedProblem.Question</p>
+            <button class="btn btn-primary" @onclick="CloseDialog">Close</button>
+            <button class="btn btn-secondary" @onclick="() => ShowProblem(selectedProblem)">Ver Problema</button>
+        </div>
+    </div>
+}
+
+
+<style>
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .dialog-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    .dialog-content {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 20px; 
+    }
+
+    .btn-outline {
+        border: 2px solid #007bff;
+        color: #007bff;
+        background: white;
+        transition: background 0.3s, color 0.3s;
+        margin: 10px; 
+    }
+
+        .btn-outline:hover {
+            background: #007bff;
+            color: white;
+        }
+
+    .btn-primary {
+        background: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+        margin: 10px; 
+    }
+
+        .btn-primary:hover {
+            background: #0056b3;
+        }
+
+    .btn-secondary {
+        background: #6c757d;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+        margin: 10px; 
+    }
+
+        .btn-secondary:hover {
+            background: #5a6268;
+        }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 15px; 
+        margin-top: 20px;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+    }
+</style>
+
+
+
+
+
+
+

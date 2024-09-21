@@ -1,0 +1,132 @@
+﻿@page "/Ejerc_25"
+@inject NavigationManager Navigation
+@rendermode InteractiveServer
+
+<h1 class="text-2xl font-bold mb-4">Encontrar la Moda de una Matriz 5x5</h1>
+
+<div class="mb-4">
+    <label class="block mb-2">Introduce la matriz de 5x5:</label>
+
+    @for (int row = 0; row < 5; row++)
+    {
+        <div class="mb-4 grid grid-cols-5 gap-2">
+            @for (int col = 0; col < 5; col++)
+            {
+                <input type="number" @bind="matrix[row, col]" class="input-box mb-2" />
+            }
+        </div>
+    }
+</div>
+
+<button class="btn btn-primary" @onclick="FindMode">Encontrar Moda</button>
+
+@if (result.HasValue)
+{
+    <div class="mt-4">
+        <p class="result-text">La moda de la matriz es: <strong>@result</strong></p>
+    </div>
+}
+
+<div class="mt-6">
+    <button class="btn btn-secondary" @onclick="GoToMathProblemSelector">Volver a los Problemas Matemáticos</button>
+</div>
+
+@code {
+    private int[,] matrix = new int[5, 5];
+    private int? result;
+
+    private void FindMode()
+    {
+        var frequency = new Dictionary<int, int>();
+        for (int row = 0; row < 5; row++)
+        {
+            for (int col = 0; col < 5; col++)
+            {
+                int value = matrix[row, col];
+                if (frequency.ContainsKey(value))
+                {
+                    frequency[value]++;
+                }
+                else
+                {
+                    frequency[value] = 1;
+                }
+            }
+        }
+
+        // Encontrar la moda
+        int mode = matrix[0, 0];
+        int maxCount = 0;
+
+        foreach (var kvp in frequency)
+        {
+            if (kvp.Value > maxCount)
+            {
+                maxCount = kvp.Value;
+                mode = kvp.Key;
+            }
+        }
+
+        result = mode;
+    }
+
+    private void GoToMathProblemSelector()
+    {
+        Navigation.NavigateTo("/math-problem");
+    }
+}
+
+<style>
+    .input-box {
+        padding: 10px;
+        border: 2px solid #007bff;
+        border-radius: 5px;
+        width: 100%;
+        max-width: 100px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+    }
+
+    .btn-primary {
+        background: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+        margin-top: 10px;
+    }
+
+        .btn-primary:hover {
+            background: #0056b3;
+        }
+
+    .btn-secondary {
+        background: #6c757d;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+        margin-top: 20px;
+    }
+
+        .btn-secondary:hover {
+            background: #5a6268;
+        }
+
+    .result-text {
+        font-size: 1.25rem;
+        color: #333;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+</style>
+

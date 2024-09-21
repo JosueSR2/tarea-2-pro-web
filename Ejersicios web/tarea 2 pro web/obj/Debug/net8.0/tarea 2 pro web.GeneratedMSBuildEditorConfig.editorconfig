@@ -1,0 +1,147 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = tarea 2 pro web
+build_property.RootNamespace = tarea 2 pro web
+build_property.ProjectDir = D:\Clase\Programacion web amadis\Ejersicios web\tarea 2 pro web\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Clase\Programacion web amadis\Ejersicios web\tarea 2 pro web
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Clase/Programacion web amadis/Ejersicios web/tarea 2 pro web/Components/App.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Clase/Programacion web amadis/Ejersicios web/tarea 2 pro web/Components/Pages/Ejercicios/Ejerc 1.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFamVyY2ljaW9zXEVqZXJjIDEucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Clase/Programacion web amadis/Ejersicios web/tarea 2 pro web/Components/Pages/Ejercicios/Ejerc 10.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFamVyY2ljaW9zXEVqZXJjIDEwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Clase/Programacion web amadis/Ejersicios web/tarea 2 pro web/Components/Pages/Ejercicios/Ejerc 11.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFamVyY2ljaW9zXEVqZXJjIDExLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Clase/Programacion web amadis/Ejersicios web/tarea 2 pro web/Components/Pages/Ejercicios/Ejerc 12.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFamVyY2ljaW9zXEVqZXJjIDEyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Clase/Programacion web amadis/Ejersicios web/tarea 2 pro web/Components/Pages/Ejercicios/Ejerc 13.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFamVyY2ljaW9zXEVqZXJjIDEzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Clase/Programacion web amadis/Ejersicios web/tarea 2 pro web/Components/Pages/Ejercicios/Ejerc 14.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFamVyY2ljaW9zXEVqZXJjIDE0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Clase/Programacion web amadis/Ejersicios web/tarea 2 pro web/Components/Pages/Ejercicios/Ejerc 15.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFamVyY2ljaW9zXEVqZXJjIDE1LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Clase/Programacion web amadis/Ejersicios web/tarea 2 pro web/Components/Pages/Ejercicios/Ejerc 16.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFamVyY2ljaW9zXEVqZXJjIDE2LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Clase/Programacion web amadis/Ejersicios web/tarea 2 pro web/Components/Pages/Ejercicios/Ejerc 17.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFamVyY2ljaW9zXEVqZXJjIDE3LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Clase/Programacion web amadis/Ejersicios web/tarea 2 pro web/Components/Pages/Ejercicios/Ejerc 18.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFamVyY2ljaW9zXEVqZXJjIDE4LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Clase/Programacion web amadis/Ejersicios web/tarea 2 pro web/Components/Pages/Ejercicios/Ejerc 19.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFamVyY2ljaW9zXEVqZXJjIDE5LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Clase/Programacion web amadis/Ejersicios web/tarea 2 pro web/Components/Pages/Ejercicios/Ejerc 2.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFamVyY2ljaW9zXEVqZXJjIDIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Clase/Programacion web amadis/Ejersicios web/tarea 2 pro web/Components/Pages/Ejercicios/Ejerc 20.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFamVyY2ljaW9zXEVqZXJjIDIwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Clase/Programacion web amadis/Ejersicios web/tarea 2 pro web/Components/Pages/Ejercicios/Ejerc 21.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFamVyY2ljaW9zXEVqZXJjIDIxLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Clase/Programacion web amadis/Ejersicios web/tarea 2 pro web/Components/Pages/Ejercicios/Ejerc 22.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFamVyY2ljaW9zXEVqZXJjIDIyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Clase/Programacion web amadis/Ejersicios web/tarea 2 pro web/Components/Pages/Ejercicios/Ejerc 23.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFamVyY2ljaW9zXEVqZXJjIDIzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Clase/Programacion web amadis/Ejersicios web/tarea 2 pro web/Components/Pages/Ejercicios/Ejerc 24.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFamVyY2ljaW9zXEVqZXJjIDI0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Clase/Programacion web amadis/Ejersicios web/tarea 2 pro web/Components/Pages/Ejercicios/Ejerc 25.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFamVyY2ljaW9zXEVqZXJjIDI1LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Clase/Programacion web amadis/Ejersicios web/tarea 2 pro web/Components/Pages/Ejercicios/Ejerc 3.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFamVyY2ljaW9zXEVqZXJjIDMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Clase/Programacion web amadis/Ejersicios web/tarea 2 pro web/Components/Pages/Ejercicios/Ejerc 4.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFamVyY2ljaW9zXEVqZXJjIDQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Clase/Programacion web amadis/Ejersicios web/tarea 2 pro web/Components/Pages/Ejercicios/Ejerc 5.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFamVyY2ljaW9zXEVqZXJjIDUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Clase/Programacion web amadis/Ejersicios web/tarea 2 pro web/Components/Pages/Ejercicios/Ejerc 6.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFamVyY2ljaW9zXEVqZXJjIDYucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Clase/Programacion web amadis/Ejersicios web/tarea 2 pro web/Components/Pages/Ejercicios/Ejerc 7.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFamVyY2ljaW9zXEVqZXJjIDcucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Clase/Programacion web amadis/Ejersicios web/tarea 2 pro web/Components/Pages/Ejercicios/Ejerc 8.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFamVyY2ljaW9zXEVqZXJjIDgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Clase/Programacion web amadis/Ejersicios web/tarea 2 pro web/Components/Pages/Ejercicios/Ejerc 9.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFamVyY2ljaW9zXEVqZXJjIDkucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Clase/Programacion web amadis/Ejersicios web/tarea 2 pro web/Components/Pages/Ejercicios/Sobre mi.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFamVyY2ljaW9zXFNvYnJlIG1pLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Clase/Programacion web amadis/Ejersicios web/tarea 2 pro web/Components/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Clase/Programacion web amadis/Ejersicios web/tarea 2 pro web/Components/Pages/MathProblemSelector.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xNYXRoUHJvYmxlbVNlbGVjdG9yLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Clase/Programacion web amadis/Ejersicios web/tarea 2 pro web/Components/Routes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Clase/Programacion web amadis/Ejersicios web/tarea 2 pro web/Components/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Clase/Programacion web amadis/Ejersicios web/tarea 2 pro web/Components/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-0pn9eoiqnt

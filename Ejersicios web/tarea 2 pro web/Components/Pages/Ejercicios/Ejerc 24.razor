@@ -1,0 +1,117 @@
+﻿@page "/Ejerc_24"
+@inject NavigationManager Navigation
+@rendermode InteractiveServer
+
+<h1 class="text-2xl font-bold mb-4">Encontrar Columna del Mayor en una Matriz 4x4</h1>
+
+<div class="mb-4">
+    <label class="block mb-2">Introduce la matriz de 4x4:</label>
+
+    @for (int row = 0; row < 4; row++)
+    {
+        <div class="mb-4 grid grid-cols-4 gap-2">
+            @for (int col = 0; col < 4; col++)
+            {
+                <input type="number" @bind="matrix[row, col]" class="input-box mb-2" />
+            }
+        </div>
+    }
+</div>
+
+<button class="btn btn-primary" @onclick="FindColumnOfMaxValue">Encontrar Columna del Mayor</button>
+
+@if (result.HasValue)
+{
+    <div class="mt-4">
+        <p class="result-text">El número mayor se encuentra en la columna: <strong>@(result + 1)</strong></p>
+    </div>
+}
+
+<div class="mt-6">
+    <button class="btn btn-secondary" @onclick="GoToMathProblemSelector">Volver a los Problemas Matemáticos</button>
+</div>
+
+@code {
+    private int[,] matrix = new int[4, 4];
+    private int? result;
+
+    private void FindColumnOfMaxValue()
+    {
+        int maxValue = matrix[0, 0];
+        int columnIndex = 0;
+
+        for (int row = 0; row < 4; row++)
+        {
+            for (int col = 0; col < 4; col++)
+            {
+                if (matrix[row, col] > maxValue)
+                {
+                    maxValue = matrix[row, col];
+                    columnIndex = col; // Guardar la columna del nuevo mayor
+                }
+            }
+        }
+
+        result = columnIndex;
+    }
+
+    private void GoToMathProblemSelector()
+    {
+        Navigation.NavigateTo("/math-problem");
+    }
+}
+
+<style>
+    .input-box {
+        padding: 10px;
+        border: 2px solid #007bff;
+        border-radius: 5px;
+        width: 100%;
+        max-width: 100px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+
+    .btn-primary {
+        background: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+        margin-top: 10px;
+    }
+
+        .btn-primary:hover {
+            background: #0056b3;
+        }
+
+    .btn-secondary {
+        background: #6c757d;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+        margin-top: 20px;
+    }
+
+        .btn-secondary:hover {
+            background: #5a6268;
+        }
+
+    .result-text {
+        font-size: 1.25rem;
+        color: #333;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+</style>
+

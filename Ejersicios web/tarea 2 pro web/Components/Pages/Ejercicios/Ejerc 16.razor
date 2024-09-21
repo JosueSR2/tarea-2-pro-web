@@ -1,0 +1,104 @@
+﻿@page "/Ejerc_16"
+@inject NavigationManager Navigation
+@rendermode InteractiveServer
+
+<h1 class="text-2xl font-bold mb-4">Calcular el Promedio de un Vector</h1>
+
+<div class="mb-4">
+    <label for="inputArray" class="block mb-2">Introduce 10 números enteros (separados por comas):</label>
+    <input type="text" @bind="inputArray" id="inputArray" class="input-box" />
+</div>
+
+<button class="btn btn-primary" @onclick="CalculateAverage">Calcular Promedio</button>
+
+@if (result.HasValue)
+{
+    <div class="mt-4">
+        <p class="result-text">El promedio entero del vector es: <strong>@result</strong></p>
+    </div>
+}
+
+<div class="mt-6">
+    <button class="btn btn-secondary" @onclick="GoToMathProblemSelector">Volver a los Problemas Matemáticos</button>
+</div>
+
+@code {
+    private string inputArray;
+    private int? result;
+
+    private void CalculateAverage()
+    {
+        try
+        {
+            // Convertir la cadena de entrada en un arreglo de enteros
+            var numbers = inputArray.Split(',').Select(int.Parse).ToArray();
+
+            if (numbers.Length == 10)
+            {
+                // Calcular el promedio entero del vector
+                result = (int)numbers.Average();
+            }
+            else
+            {
+                result = null; // Si el vector no tiene exactamente 10 elementos
+            }
+        }
+        catch
+        {
+            result = null; // En caso de error con el formato de entrada
+        }
+    }
+
+    private void GoToMathProblemSelector()
+    {
+        Navigation.NavigateTo("/math-problem");
+    }
+}
+
+<style>
+    .input-box {
+        padding: 10px;
+        border: 2px solid #007bff;
+        border-radius: 5px;
+        width: 100%;
+        max-width: 300px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-primary {
+        background: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+        margin-top: 10px;
+    }
+
+        .btn-primary:hover {
+            background: #0056b3;
+        }
+
+    .btn-secondary {
+        background: #6c757d;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+        margin-top: 20px;
+    }
+
+        .btn-secondary:hover {
+            background: #5a6268;
+        }
+
+    .result-text {
+        font-size: 1.25rem;
+        color: #333;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+</style>

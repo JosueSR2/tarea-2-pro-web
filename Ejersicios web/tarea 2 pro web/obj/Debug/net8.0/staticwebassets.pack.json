@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Clase\\Programacion web amadis\\Ejersicios web\\tarea 2 pro web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\tarea_2_pro_web.bundle.scp.css",
+      "PackagePath": "staticwebassets\\tarea_2_pro_web.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\Clase\\Programacion web amadis\\Ejersicios web\\tarea 2 pro web\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "D:\\Clase\\Programacion web amadis\\Ejersicios web\\tarea 2 pro web\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Clase\\Programacion web amadis\\Ejersicios web\\tarea 2 pro web\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\Clase\\Programacion web amadis\\Ejersicios web\\tarea 2 pro web\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.tarea_2_pro_web.props",
+      "PackagePath": "build\\tarea_2_pro_web.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.tarea_2_pro_web.props",
+      "PackagePath": "buildMultiTargeting\\tarea_2_pro_web.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.tarea_2_pro_web.props",
+      "PackagePath": "buildTransitive\\tarea_2_pro_web.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.tarea_2_pro_web.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
